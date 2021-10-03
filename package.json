@@ -11,7 +11,7 @@
     "test": "tsc && NODE_OPTIONS=--experimental-vm-modules jest",
     "update": "npx npm-check --update --save-exact",
     "preversion": "npm test",
-    "postversion": "git push && git push --tags && npm publish"
+    "postversion": "git push && git push --tags && npm publish --access public"
   },
   "keywords": [
     "prelude",
