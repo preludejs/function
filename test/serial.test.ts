@@ -1,5 +1,5 @@
 import * as A from '@prelude/array'
-import * as F from '../index.js'
+import * as F from '../cjs/index.js'
 
 test('serial', async () => {
   const xs: number[] = []

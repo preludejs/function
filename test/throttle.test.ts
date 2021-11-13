@@ -1,4 +1,4 @@
-import * as F from '../index.js'
+import * as F from '../cjs/index.js'
 
 test('throttle', async () => {
   const xs: number[] = []
