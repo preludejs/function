@@ -1,5 +1,6 @@
 import and from './and.js'
 import dec from './dec.js'
+import equivalent from './equivalent.js'
 import eventually from './eventually.js'
 import fire from './fire.js'
 import identity from './identity.js'
@@ -27,6 +28,7 @@ export {
   implies,
   and,
   dec,
+  equivalent,
   eventually,
   fire,
   identity,

@@ -1,15 +1,15 @@
 import type { Predicate } from './prelude.js'
 
-/** @returns boolean logic exlusive-or from provided predicates. */
-const xor =
+/** @returns boolean logic equivalence from provided predicates. */
+const equivalent =
   <A, B>(a: Predicate<A>, b: Predicate<B>) =>
     (value: A & B) =>
       a(value) ?
         b(value) ?
+          true :
           false :
-          true :
         b(value) ?
-          true :
-          false
+          false :
+          true
 
-export default xor
+export default equivalent
