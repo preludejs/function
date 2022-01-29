@@ -3,6 +3,7 @@ import dec from './dec.js'
 import eventually from './eventually.js'
 import fire from './fire.js'
 import identity from './identity.js'
+import implies from './implies.js'
 import inc from './inc.js'
 import memoize from './memoize.js'
 import noop from './noop.js'
@@ -14,7 +15,7 @@ import serial from './serial.js'
 import sleep from './sleep.js'
 import throttle from './throttle.js'
 import timeout from './timeout.js'
-import implies from './implies.js'
+import xor from './xor.js'
 
 export * from './prelude.js'
 
@@ -40,5 +41,6 @@ export {
   sleep,
   t_ as t,
   throttle,
-  timeout
+  timeout,
+  xor
 }

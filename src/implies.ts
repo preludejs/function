@@ -1,4 +1,4 @@
-import type { Predicate } from '.'
+import type { Predicate } from './prelude.js'
 
 const implies =
   <T, U>(a: Predicate<T>, b: Predicate<U>) =>
