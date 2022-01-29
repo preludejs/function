@@ -6,6 +6,8 @@ import inc from './inc.js'
 import memoize from './memoize.js'
 import noop from './noop.js'
 import not from './not.js'
+import pipe from './pipe.js'
+import pipe1 from './pipe1.js'
 import serial from './serial.js'
 import sleep from './sleep.js'
 import throttle from './throttle.js'
@@ -24,6 +26,8 @@ export {
   memoize,
   noop,
   not,
+  pipe,
+  pipe1,
   serial,
   sleep,
   t_ as t,
