@@ -14,6 +14,7 @@ import serial from './serial.js'
 import sleep from './sleep.js'
 import throttle from './throttle.js'
 import timeout from './timeout.js'
+import implies from './implies.js'
 
 export * from './prelude.js'
 
@@ -22,6 +23,7 @@ export interface t extends Function {}
 const t_ = Function
 
 export {
+  implies,
   and,
   dec,
   eventually,
