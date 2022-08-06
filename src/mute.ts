@@ -6,7 +6,7 @@ import rescue from './rescue.js'
  * @returns `defaultValue` if `thunk` throws, otherwise returns the return value of `thunk`.
  */
 const mute =
-  <T>(thunk: () => T, defaultValue: T): T =>
+  <T, U>(thunk: () => T, defaultValue: U): T | U =>
     rescue(thunk, () => defaultValue)
 
 export default mute

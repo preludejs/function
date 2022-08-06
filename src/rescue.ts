@@ -1,6 +1,6 @@
 /** Rescues thunk throwing an error with provided fallback function. */
 const rescue =
-  <T>(thunk: () => T, fallback: (err: unknown) => T): T => {
+  <T, U>(thunk: () => T, fallback: (err: unknown) => U): T | U => {
     try {
       return thunk()
     } catch (err) {
